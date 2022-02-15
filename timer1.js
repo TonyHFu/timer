@@ -8,6 +8,7 @@ args = args.filter(a=>{
 args.forEach(a=>{
   setTimeout(()=>{
     process.stdout.write('\x07');
+    // process.stdout.write('\x07');
   }, a * 1000)
 });
 
@@ -24,6 +25,6 @@ for (let count = 0; count <= maxCount; count++) {
 }
 setTimeout(()=>{
   process.stdout.write("\n");
-}, (maxCount + 1) * 1000);
+}, (maxCount) * 1000);
 
 
